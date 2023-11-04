@@ -1,5 +1,17 @@
+import { MovieContextProvider } from "./contexts/MovieContext";
+import MoviesContainer from "./components/MoviesContainer";
+import Navbar from "./components/Navbar";
+import "./movie.css";
+
 const App = () => {
-	return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+	return (
+		<div className="flex items-center justify-center flex-col">
+			<MovieContextProvider>
+				<Navbar />
+				<MoviesContainer />
+			</MovieContextProvider>
+		</div>
+	);
 };
 
 export default App;
