@@ -7,7 +7,7 @@ const MoviesContainer = () => {
 	const theme = mode === "light" ? themeStyle.light : themeStyle.dark;
 
 	return (
-		<main className={`h-full py-[100px] bg-[${theme.body}]`}>
+		<main className="h-full py-[100px]" style={{ backgroundColor: theme.bg }}>
 			<SearchBar />
 			<MoviesList />
 		</main>
