@@ -5,15 +5,17 @@ const MoviesList = () => {
 	const { moviesList } = useMovieContext();
 
 	return (
-		<div className="container mx-auto flex items-center justify-center flex-wrap gap-12">
+		<section className="container mx-auto flex items-center justify-center flex-wrap gap-12">
 			{moviesList.length > 0 ? (
 				moviesList.map((movie) => <MovieCard {...movie} key={movie.imdbID} />)
 			) : (
-				<div className="empty w-full mt-[3rem] flex items-center justify-center">
-					<h2>No movies found</h2>
+				<div className="w-screen h-screen mt-[3rem] flex items-start justify-center">
+					<h2 className="text-3xl text-center tracking-wide text-[#f9d3b4]">
+						No movies found
+					</h2>
 				</div>
 			)}
-		</div>
+		</section>
 	);
 };
 

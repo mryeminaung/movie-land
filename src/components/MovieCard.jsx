@@ -1,6 +1,6 @@
 const MovieCard = ({ Year, Poster, Title, Type }) => {
 	return (
-		<div className="movie group relative w-80 h-[460px] shadow-sm shadow-[#f9d3b4]  rounded-xl overflow-hidden transition-transform hover:scale-105">
+		<div className="movie group relative w-80 h-[460px] shadow-sm shadow-[#f9d3b4] rounded-xl overflow-hidden transition-transform hover:scale-105">
 			<div className="absolute p-[16px] group-hover:opacity-100 w-full opacity-0 top-0 text-[#f9d3b4]">
 				<p className="text-[#f9d3b4]">{Year}</p>
 			</div>
