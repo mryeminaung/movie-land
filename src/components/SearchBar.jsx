@@ -10,7 +10,7 @@ const SearchBar = () => {
 
 	return (
 		<section
-			className="search container max-w-[50%] mx-auto px-[1.75rem] py-[1.5rem] flex justify-center items-center rounded-[50px] mb-[3rem] border"
+			className="search container w-[70%] md:max-w-[50%] mx-auto px-[1.75rem] py-[1.5rem] flex justify-center items-center rounded-[50px] mb-[3rem] border"
 			style={{
 				backgroundColor: isDark ? "#1f2123" : theme.bg,
 				borderColor: isDark ? "transparent" : "#f9d3b4",
