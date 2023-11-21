@@ -6,7 +6,8 @@ const MoviesList = () => {
 
 	return (
 		<section className="container mx-auto flex items-center justify-center flex-wrap gap-12">
-			{moviesList.length > 0 ? (
+			{moviesList ? (
+				moviesList.length > 0 &&
 				moviesList.map((movie) => <MovieCard {...movie} key={movie.imdbID} />)
 			) : (
 				<div className="w-screen h-screen mt-[3rem] flex items-start justify-center">

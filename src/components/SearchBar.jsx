@@ -29,7 +29,13 @@ const SearchBar = () => {
 				src={SearchIcon}
 				className="w-[25px] h-[25px] md:w-[35px] md:h-[35px] cursor-pointer"
 				alt="search"
-				onClick={() => searchMovies(title)}
+				onClick={() => {
+					if (title) {
+						searchMovies(title);
+					} else {
+						alert("Type movie name");
+					}
+				}}
 			/>
 		</section>
 	);
